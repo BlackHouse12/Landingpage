@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Responsive Landing Page Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+>    
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="whatsapp-link" href="https://web.whatapp.com/send?pphone=5575981902882" >
+        <i class="fa fa whatapp"></i>
+        
+    </a>
+
+ <!-- nav bar   -->
+ <section>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <img src="" class="text-warning" alt="...">
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre nós</a>
+          </li> 
+          <!--li class="nav-item">
+            <a class="nav-link" href="#services">Categoria</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Gestante</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Bebê</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Batizado</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Aniversario</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Ensaio</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#pet">Pet</a>
+          </li>   
+          <li class="nav-item">
+            <button class="button-contato" href="#footer">Contato</button>
+          </li>    
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+ </section>
+ <section>
+  <div class="conteudo">
+    <div class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <!-- Remova o título, subtitulo e botão -->
+      </div>
+      <img class="conteudo-principal-imagem" src="image/Banner 01.png" alt="">
+    </div>
+  </div>
+   
+ </section>
+  
+
+ <!--section Sobre nós-->
+ <section id="about" class="about section-padding">
+  <div class="container">
+      <div class="row">
+          <div class="col">
+              <div class="about-img">
+                  <img class="col-lg-8 smaller-image" src="image/banner 02.png" alt="" class="img-fluid">
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-md-12 ps-lg-5 mt-md-5">
+              <div class="about-text">
+                  <h2>Sobre nós</h2>
+                  <p>Somos um casal de fotógrafos, realizamos ensaios em estúdio, ensaios externos, aniversários
+                      infantis e debutantes, batizados e registramos eventos corporativos.
+                      <br>
+                      <br>Ahh, não podemos esquecer dos ensaios Pet.<br></p>
+                  <a href="#" class="btn btn-warning">Saiba mais</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+    
+
+
+
+
+      <!-- about section Ends -->
+
+   
+     
+    <section>
+      <title>Galeria</title>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        .container {
+          width: 70%;
+          margin: 0 auto;
+        }
+    
+        .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -5px;
+        }
+    
+        .gallery-item {
+          flex-basis: calc(50% - 10px); /* 50% width for the first row */
+          margin: 5px;
+        }
+    
+        .gallery-item:nth-child(3),
+        .gallery-item:nth-child(4),
+        .gallery-item:nth-child(5) {
+          flex-basis: calc(33.33% - 10px); /* 33.33% width for the second row */
+        }
+    
+        .gallery-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        .aspect-ratio-box {
+          position: relative;
+          width: 100%;
+          padding-bottom: 100%; /* 1:1 aspect ratio (square) */
+        }
+    
+        .aspect-ratio-box img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        @media (max-width: 768px) {
+          .container {
+            width: 90%; /* Adjust the width for smaller screens */
+          }
+    
+          .gallery-item {
+            flex-basis: calc(50% - 10px); /* 50% width for all rows on smaller screens */
+          }
+    
+          .gallery-item:nth-child(3),
+          .gallery-item:nth-child(4),
+          .gallery-item:nth-child(5) {
+            flex-basis: calc(50% - 10px); /* 50% width for the second row on smaller screens */
+          }
+        }
+      </style>
+   
+  
+      <div class="container">
+        <div class="gallery">
+          <div class="gallery-item">
+            <div class="aspect-ratio-box">
+              <img src="image/img6.png" alt="Foto 1">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="aspect-ratio-box">
+              <img src="image/img7.png" alt="Foto 2">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="aspect-ratio-box">
+              <img src="image/img8.png" alt="Foto 3">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="aspect-ratio-box">
+              <img src="image/img9.png"alt="Foto 4">
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="aspect-ratio-box">
+              <img src="image/img10.png"alt="Foto 5">
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+        
+      
+      
+      
+
+
+      <!-- services section Starts -->
+      <section class="services section-padding" id="services">
+          <div class="container">
+              <div class="row">
+                      <div class="section-header text-center pb-5">
+                          <h2>Categoria</h2>
+                      </div>
+                  </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-laptop"></i>
+                            <h3 class="card-title">Best Quality</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                            <button class="btn bg-warning text-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-12 col-md-12 col-lg-4">
+                      <div class="card text-white text-center bg-dark pb-2">
+                          <div class="card-body">
+                            <i class="bi bi-journal"></i>
+                              <h3 class="card-title">Sustainability</h3>
+                              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                              <button class="btn bg-warning text-dark">Read More</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-4">
+                      <div class="card text-white text-center bg-dark pb-2">
+                          <div class="card-body">
+                            <i class="bi bi-intersect"></i>
+                              <h3 class="card-title">Integrity</h3>
+                              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
+                              <button class="btn bg-warning text-dark">Read More</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+          <div class="clearfix">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <img src="image/img1.png" class="img-fluid" alt="..." style="max-width: 100%;">
+              </div>
+          
+              
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                
+                <p class="text-justify">
+                  A paragraph of placeholder text. We're using it here to 
+                  show the <br> use of the clearfix class. We're adding quite a <br>
+                  few meaningless phrases here to demonstrate how the columns <br>
+                  interact here with the floated image.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="clearfix">
+            <div class="row">
+              <div class="col-md-6 mb-3 order-md-2">
+                <img src="image/img2.png" class="img-fluid" alt="..." style="max-width: 100%;">
+              </div>
+          
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div>
+                  <p class="text-justify-secundario">
+                    A paragraph of placeholder text. We're using it here to show the use of the clearfix class.<br>
+                     We're adding quite a few meaningless phrases here to demonstrate how the columns interact <br>
+                     here with the floated image.
+                  </p>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <img src="image/img3.png" class="img-fluid" alt="..." style="max-width: 100%;">
+              </div>
+          
+              
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                
+                <p class="text-justify">
+                  A paragraph of placeholder text. We're using it here to 
+                  show the <br> use of the clearfix class. We're adding quite a <br>
+                  few meaningless phrases here to demonstrate how the columns <br>
+                  interact here with the floated image.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="clearfix">
+            <div class="row">
+              <div class="col-md-6 mb-3 order-md-2">
+                <img src="image/img4.png" class="img-fluid" alt="..." style="max-width: 100%;">
+              </div>
+          
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div>
+                  <p class="text-justify-secundario">
+                    A paragraph of placeholder text. We're using it here to show the use of the clearfix class.<br>
+                     We're adding quite a few meaningless phrases here to demonstrate how the columns interact <br>
+                     here with the floated image.
+                  </p>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <img src="image/img5.png" class="img-fluid" alt="..." style="max-width: 100%;">
+              </div>
+          
+              
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                
+                <p class="text-justify">
+                  A paragraph of placeholder text. We're using it here to 
+                  show the <br> use of the clearfix class. We're adding quite a <br>
+                  few meaningless phrases here to demonstrate how the columns <br>
+                  interact here with the floated image.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        
+          
+          
+          
+          
+      </section> 
+      <!-- services section pet -->
+      <section id="pet" class="about section-padding black-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="about-text-pet">
+                        <h2>Sobre nós</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                           
+                          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.<br></p>
+                        <a href="#" class="btn btn-warning">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="about-img">
+                        <img src="image/imagePet.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+      <!-- galeria -->
+      <section class="galery-container-section">
+        <div class="galery-container" > 
+
+          <div class="filho">
+            <h1>Instagram</h1>
+      
+            <div class="neto" >
+              <a href="img/01.jpg" class="image"><img src="image/insta1.png" alt=""></a>
+              <a href="img/02.jpg"class="image"><img src="image/insta2.png"  alt=""></a>
+              <a href="img/03.jpg"class="image"><img src="image/insta3.png" alt=""></a>
+              <a href="img/04.jpg"class="image"><img src="image/insta4.png" alt=""></a>
+              <a href="img/05.jpg"class="image"><img src="image/insta5.png"  alt=""></a>
+              <a href="img/06.jpg"class="image"><img src="image/insta6.png"  alt=""></a>
+              <a href="img/07.jpg"class="image"><img src="image/insta7.png" alt=""></a>
+              <a href="img/08.jpg"class="image"><img src="image/insta8.png"  alt=""></a>
+  
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      <!-- portfolio ends -->
+     
+      <style>
+        .gallery2 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+    
+        .gallery2 img {
+          width: calc(33.33% - 20px);
+          height: auto;
+          margin: 10px;
+        }
+    
+        .gallery2 img:nth-last-child(-n+2) {
+          width: calc(50% - 20px);
+        }
+    
+        @media screen and (max-width: 768px) {
+          .gallery2 img {
+            width: calc(50% - 20px);
+          }
+        }
+    
+        @media screen and (max-width: 480px) {
+          .gallery2 img {
+            width: 100%;
+          }
+        }
+        h1 {
+      text-align: center;
+    }
+      </style>
+    
+      <h1>Portfólio</h1>
+
+      <div class="gallery2">
+        <img src="image/port1.png" alt="Foto 1">
+        <img src="image/port2.png" alt="Foto 2">
+        <img src="image/port3.png" alt="Foto 3">
+        <img src="image/port4.png" alt="Foto 4">
+        <img src="image/port5.png" alt="Foto 5">
+      </div>  
+      <!-- team ends -->
+      <!-- Contact starts 
+      <section id="contact" class="contact section-padding">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Contact Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
+                    </div>
+                </div>
+            </div>
+			<div class="row m-0">
+				<div class="col-md-12 p-0 pt-4 pb-4">
+					<form action="#" class="bg-light p-4 m-auto">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="mb-3">
+									<input class="form-control" placeholder="Full Name" required="" type="text">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<input class="form-control" placeholder="Email" required="" type="email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="mb-3">
+									<textarea class="form-control" placeholder="Message" required="" rows="3"></textarea>
+								</div>
+							</div><button class="btn btn-warning btn-lg btn-block mt-3" type="button">Send Now</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+      </section>
+       -->
+      <!-- contact ends -->
+      <!-- footer starts -->
+      <footer>
+        <div class="coluna">
+          <img src="image/footer.png" alt="Logo">
+        </div>
+        <div class="coluna">
+          <h4>Contato</h4>
+          <p>Email: exemplo@example.com</p>
+          <p>Telefone: (123) 456-7890</p>
+        </div>
+        <div class="coluna">
+          <h4>Endereço</h4>
+          <p>Rua Exemplo, 123</p>
+          <p>Cidade, Estado</p>
+        </div>
+        <div class="coluna">
+          <h4>Redes Sociais</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="direitos-autorais">
+          <p>&copy; Copyrights 2022 - Todos os direitos reservados</p>
+        </div>
+        
+      </footer>
+      
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+  
+  
+  <!-- All Js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
